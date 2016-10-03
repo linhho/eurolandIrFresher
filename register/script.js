@@ -72,4 +72,7 @@ function notifyBoxRegister(user, mail, pass, repass) {
         box.classList.add('notify');
         setTimeout(function(){ box.classList.remove('notify'); },1000);
     }
+    else{
+        alert('Thêm mới tài khoản thành công');
+    }
 }
