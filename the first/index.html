@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="cssframework.css">
+</head>
+<body>
+	<script>
+        var w = function() {
+            alert("hello");
+        }
+        var sp = function() {
+            var a,b;
+        }
+
+        var sp1 = new sp;
+        sp.prototype.wSP = w;
+        var sp2 = new sp;
+        sp2.wSP;
+    </script>
+</body>
+</html>

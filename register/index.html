@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div id="registerDiv">
+        <form action="">
+           <h1>Register</h1>
+           <div id="nameDiv" class="inputDiv">
+                <i class="material-icons icon">account_circle</i>
+                <input id="name" class="textfield" type="text" placeholder="User name" required>
+           </div>
+           <div id="emailDiv" class="inputDiv">
+                <i class="material-icons icon">email</i>
+                <input id="email" class="textfield" type="email" placeholder="Email" required>
+           </div>
+           <div id="passDiv" class="inputDiv">
+                <i class="material-icons icon">lock</i>
+                <input id="pass" class="textfield" type="password" placeholder="password" required>
+           </div>
+           <div id="repassDiv" class="inputDiv">
+                <i class="material-icons icon">lock_outline</i>
+                <input id="rePass" class="textfield" type="password" placeholder="confirm password" required>
+           </div>
+           <div class="genderRadio">
+                <input type="radio" name="gender" value="male" checked> Male
+                <input type="radio" name="gender" value="female"> Female
+           </div>
+           <div>
+                <select>
+                  <option value="vietnam">Viet Nam</option>
+                  <option value="unitedStates">United States</option>
+                  <option value="colombia">Colombia</option>
+                  <option value="japan">Japan</option>
+                  <option value="laos">Laos</option>
+                </select> 
+           </div>   
+        </form>
+            <div class="submitDiv">
+                <button onclick="validation()">Register</button>
+           </div>  
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

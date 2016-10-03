@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Point</title>
+    <style>
+        span{
+            width: 100px;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            line-height: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+            border: 5px solid black;
+            margin: 1px;
+        }
+        .parent{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+   <div id="studentList">
+       
+   </div>
+    <script>
+        var studentList = [{name:'Linh', point:10},{name:'Kien', point:9},{name:'Hung', point:8},{name:'Gia', point:9}];
+        var list = document.getElementById('studentList');
+        for(i=0;i<studentList.length;i++){
+            var parent = document.createElement('div');
+            parent.setAttribute('class','parent');
+            var nameElement = document.createElement('span');
+            var nameNode = document.createTextNode(studentList[i].name);
+            var pointElement = document.createElement('p');
+            var pointNode = document.createTextNode(studentList[i].point);
+            nameElement.appendChild(nameNode);
+            pointElement.appendChild(pointNode);
+            
+            parent.appendChild(nameElement);
+            parent.appendChild(pointElement);
+            
+            list.appendChild(parent);
+        }
+    </script>
+</body>
+</html>

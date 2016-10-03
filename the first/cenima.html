@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cenima</title>
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+        button {
+            width: 35px;
+            height: 20px;
+            background-color: green;
+            color: white;
+        }
+        .red {
+            background-color: red;
+        }
+        div {
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="cenima">
+    </div>
+    <script>
+        //config column and row
+        var minColumn = 3;
+        var maxColumn = 5;
+        var minRow = 4;
+        var maxRow = 6;
+        //
+        //rowName = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']; 
+        var parent = document.getElementById('cenima');
+        
+        column = random(maxColumn, minColumn);
+        row = random(maxRow, minRow);
+        createColumn(column,row);
+        function createColumn(column, row){
+            for(i=0;i<(column*row);i++){
+                t = Math.floor(Math.random()*5);
+                var para = document.createElement('button');
+                para.setAttribute('id',''+(i+1));
+                para.setAttribute('onclick',"changeColor('"+(i+1)+"')");
+                var node = document.createTextNode(''+(i+1));
+                para.appendChild(node);
+                if(t % 2 == 0){
+                    para.setAttribute('class','red')
+                    //para.style.backgroundColor = 'red';
+                }
+                parent.appendChild(para);
+                if((i+1)%column==0){
+                    br = document.createElement('br');
+                    parent.appendChild(br);
+                }
+            }
+        }
+        function changeColor(col){
+            test =document.getElementById(col).getAttribute('class');
+            if(test == 'red'){
+                alert('Ô '+col+' đã có người đặt.')
+            }
+            else{
+            document.getElementById(col).setAttribute('class','red');
+              setTimeout(function(){ alert("bạn đã đặt ô "+ col +" thành công"); }, 0);
+            }
+        }
+        function random(max, min){
+            return (min + Math.floor(Math.random()*(max - min)));
+        }
+    </script>
+</body>
+</html>

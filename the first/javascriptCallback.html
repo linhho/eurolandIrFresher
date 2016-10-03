@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="hide1(callback())">hide1</button><br>
+   <p id='hide1'>Hello 1</p>
+   <button onclick="hide2()">hide2</button><br>
+   <p id='hide2'>Hello 2</p>
+    <script> 
+        function hide1(call){
+            document.getElementById('hide1').style.visibility='hidden';
+            call();
+        }
+        function hide2(){
+            callback();
+            document.getElementById('hide2').style.display='none';
+        }
+        function callback(){
+            alert('Hide element'); 
+        }
+    </script>
+</body>
+</html>

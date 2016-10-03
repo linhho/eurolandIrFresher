@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script>
+
+    function writeDocument() {
+      a = document.getElementById('xuat');
+      a.innerHTML = 'hi';
+    }
+    //autorun delay
+    window.onload = function () {
+    writeDocument();
+    }
+  </script>
+</head>
+<body>
+  <input type="text" id="nhap"><br>
+  <input type="button" value="=>" onclick='giDo()'><br>
+  <!-- <input type="text" id="xuat"> -->
+  <h1 id='xuat'></h1>
+  <script>
+    /*a = 1;
+    b = 2;
+    c = a + b;
+    console.log(c);
+    //this is comment
+    if (a<b) {
+      console.log(a);
+    }*/
+    
+    /*function giDo() {
+      aleft('hi');
+    }*/
+    
+    function giDo() {
+      a = document.getElementById('nhap').value;
+      b = document.getElementById('xuat');
+      //document.getElementById('xuat').value = a;
+      b.innerHTML = a;
+      b.style.color = 'red';
+      b.style.fontWeight = 'normal'
+    }
+  </script>
+</body>
+</html>

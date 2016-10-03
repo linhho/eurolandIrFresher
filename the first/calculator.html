@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        div{
+            background-color: cadetblue;
+            width: 140px;
+            padding:15px;
+            margin: 100px auto;
+            border-radius: 5px;
+            box-shadow: 0px 1px 20px rgba(0,0,0,0.2); 
+        }
+        button{
+            width: 30px;
+            height: 20px;
+            margin: 1px;
+        }
+        span{
+            min-width: 100px;
+            background-color: antiquewhite;
+            float: right;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+  <iframe src="http://len.reu.vn/trang-chu.html" frameborder="0" style="height:600px"></iframe>
+   <div>
+        <button onclick="clearResult()">CA</button><span id="result">0</span><br>
+        <button onclick="add('7')">7</button>
+        <button onclick="add('8')">8</button>
+        <button onclick="add('9')">9</button>
+        <button onclick="add('/')">/</button>
+        <br>
+        <button onclick="add('4')">4</button>
+        <button onclick="add('5')">5</button>
+        <button onclick="add('6')">6</button>
+        <button onclick="add('*')">*</button>
+        <br>
+        <button onclick="add('1')">1</button>
+        <button onclick="add('2')">2</button>
+        <button onclick="add('3')">3</button>
+        <button onclick="add('-')">-</button>
+        <br>
+        <button onclick="add('0')">0</button>
+        <button onclick="add('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="add('+')">+</button>
+        <br> 
+   </div>
+    <script>
+        resultHtmlElement = document.getElementById('result')
+        result = resultHtmlElement.innerHTML;
+        function add(number){
+            result += number;
+            resultHtmlElement.innerHTML = result;
+        }
+        function calculate(){
+            result = eval(result);
+            resultHtmlElement.innerHTML = result;
+        }
+        function clearResult(){
+            result = 0;
+            resultHtmlElement.innerHTML = result;
+        }
+    </script>
+</body>
+</html>
