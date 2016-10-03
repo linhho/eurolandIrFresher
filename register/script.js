@@ -3,7 +3,7 @@ var checked = false;
 function passwordValidation(pass) {
     test = pass;
     //var password = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}/;
-    var password = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/
+    var password = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z0-9\d$@$!%*?&]{4,}/;
     notify('passDiv',password.test(test));
 }
 function nameValidation(name) {
