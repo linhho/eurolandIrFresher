@@ -70,7 +70,7 @@ function notifyBoxRegister(user, mail, pass, repass) {
     if(user==false || mail==false || pass==false || repass==false){
         var box = document.getElementsByClassName('registerDiv')[0];
         box.classList.add('notify');
-        setTimeout(function(){ box.classList.remove('notify'); },1000);
+        setTimeout(function(){ box.classList.remove('notify'); },500);
     }
     else{
         alert('Thêm mới tài khoản thành công');
