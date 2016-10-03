@@ -7,7 +7,7 @@ h1{
     text-align: center;
 }
 
-#registerDiv {
+.registerDiv {
     width: 300px;
     margin: 100px auto;
     background-color: white;
@@ -64,4 +64,30 @@ button {
     -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.42);
     -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.42);
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.42);
+}
+
+.registerDiv.notify {
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 0.5s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:20px; top:0px;}
+    50%  {left:-20px; top:0px;}
+    75%  {left:10px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:20px; top:0px;}
+    50%  {left:-20px; top:0px;}
+    75%  {left:10px; top:0px;}
+    100% {left:0px; top:0px;}
 }
