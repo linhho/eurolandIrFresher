@@ -1,0 +1,103 @@
+html body{
+    margin: 0px;
+    height: 100%;
+}
+header {
+    height: 52px;
+    margin-top: 0px;
+}
+nav {
+    position: relative;
+    height: 65px;
+    background-color: black;
+    border-top: 4px solid #17aa1c;
+    border-top-width: 4px;
+    border-top-style: solid;
+    border-top-color: rgb(23, 170, 28);
+    box-sizing: content-box;
+    z-index: 5;
+}
+.logo {
+    height: 26.5px;
+    width: 120px;
+   margin: 18px 10px;
+    
+    
+}
+.socialLogin {
+    padding: 10px;
+}
+.loginForm {
+    padding: 10px;
+}
+
+.bg {
+ z-index: -1;   
+}
+/*
+@media only screen and (max-width: 600px) {
+  .loginForm {
+
+}
+}
+*/
+
+@media only screen and (min-width: 601px) {
+  .loginForm {
+    border-left: 1px;
+    border-left-style: solid;
+    border-left-color: #e0e0e0;
+    padding: 10px;
+   }
+}
+
+/*Search Udemy*/
+.udemySearch {
+    width: 60%;
+    background-color: black;
+    margin: auto;
+    margin-top: 120px;
+    opacity: 0.8;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+#searchField {
+    background-color: white;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 20px;
+    
+}
+
+.searchButton {
+    height: 61px;
+    padding-left: 35px !important;
+    padding-top: 20px !important;
+    background-color: #1376d7;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+
+
+/*Social login*/
+#FacebookLogin {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#GoogleLogin {
+    width: 100%;
+}
+
+/*Login*/
+#submitLogin {
+    width: 100%;
+}
+#userName {
+    background-color: white;
+    height: 40px;
+    border-radius: 5px;
+}

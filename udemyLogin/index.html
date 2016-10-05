@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Udemy Online Courses</title>
+    <!-- Compiled and minified CSS -->
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <img class="logo" src="images/logo.svg" alt="">
+          <ul id="nav-mobile" class="right hide-on-small-only">
+            <li><a href="#">Udemy for Business</a></li>
+            <li><a href="#">Become an Instructor</a></li>
+            <li><a class="modal-trigger" href="#loginModal" data-target="loginModal">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="slider fullscreen bg">
+        <ul class="slides">
+          <li>
+            <img src="images/man_mockup_n.jpeg">
+          </li>
+          <li>
+            <img src="images/woman_phone.jpeg">
+          </li>
+        </ul>
+      </div>
+      <div class="udemySearch row">
+          <h2 class="center white-text">What course will your life take?</h2>
+          <h5 class="center white-text">Own your future by learning new skills online</h5>
+          <div class="col s10 ">
+          <input id="searchField" type="text"> 
+          </div>
+          <div class="col s2 searchButton">            
+              <i class="material-icons">search</i>
+          </div>
+      </div>
+    
+    <!-- Modal Structure -->
+  <div id="loginModal" class="modal grey lighten-2">
+      <a href="#!" class=" modal-action modal-close grey-text  text-darken-3"><i class="material-icons right">clear</i></a>
+     <div class="modal-content row">
+      <h5 class="center grey-text text-darken-2">Login to your Udemy account!</h5>
+      <div class="divider"></div>
+      <div class="col s12 m6 l6 socialLogin">
+          <a id="FacebookLogin" class="waves-effect waves-light btn-large blue"><i class="material-icons left">cloud</i>Continue with Facebook</a>
+          <a id="GoogleLogin" class="waves-effect waves-light btn-large red"><i class="material-icons left">cloud</i>Continue with Google</a>
+      </div>
+      <div class="col s12 m6 l6 loginForm">
+          <b>Login with your email</b>
+          <form action="">
+              <input id="userName" type="text" required>
+              <input id="passWord" type="password" required>
+              <button id="submitLogin" class="waves-effect waves-light btn-large green" onclick="loginAction()">Login</button>
+          </form>
+      </div>
+    </div>
+  </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="js/md5.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

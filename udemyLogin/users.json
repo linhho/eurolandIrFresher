@@ -1,0 +1,9 @@
+{
+    users [
+        {'name':'linh','pass':'123456'},
+        {'name':'kien','pass':'123456'},
+        {'name':'quan','pass':'123456'},
+        {'name':'cuong','pass':'123456'},
+        {'name':'phuc','pass':'123456'}
+    ]
+}
