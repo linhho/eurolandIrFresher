@@ -1,9 +1,9 @@
 {
-    users [
-        {'name':'linh','pass':'123456'},
-        {'name':'kien','pass':'123456'},
-        {'name':'quan','pass':'123456'},
-        {'name':'cuong','pass':'123456'},
-        {'name':'phuc','pass':'123456'}
-    ]
+    "users":[
+	    {"name":"linh", "pass":"e10adc3949ba59abbe56e057f20f883e"},
+	    {"name":"gam", "pass":"e10adc3949ba59abbe56e057f20f883e"},
+	    {"name":"hung", "pass":"e10adc3949ba59abbe56e057f20f883e"},
+	    {"name":"kien", "pass":"e10adc3949ba59abbe56e057f20f883e"},
+	    {"name":"nghia", "pass":"e10adc3949ba59abbe56e057f20f883e"}
+	]
 }

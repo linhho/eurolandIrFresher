@@ -97,7 +97,12 @@ nav {
     width: 100%;
 }
 #userName {
-    background-color: white;
+    background-color: #eeeeee;
+    height: 40px;
+    border-radius: 5px;
+}
+#passWord {
+    background-color: #eeeeee;
     height: 40px;
     border-radius: 5px;
 }
