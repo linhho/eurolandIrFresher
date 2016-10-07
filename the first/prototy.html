@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        String.prototype.repeat = function(num){
+            var result = "";
+            for(i=0;i<num;i++){
+                result = result + this + " ";
+            }
+            return result;
+        }
+        console.log("Euroland".repeat(5));
+    </script>
+</body>
+</html>

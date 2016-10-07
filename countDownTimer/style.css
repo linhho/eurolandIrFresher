@@ -1,0 +1,56 @@
+body {
+    background: url('bg.jpg')
+    no-repeat center center fixed;
+    background-size: cover;
+    color: grey;
+}
+
+.clockDiv {
+    width: 50%;
+    height: 30vh;
+    max-width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    opacity: 0.3;
+    padding: 20px 10px;
+}
+
+@media screen and (max-width: 700px) {
+   .clockDiv {
+        width: auto;
+        height: 90vh;
+        background-color: black;
+        border-radius: 10px;
+       margin: auto;
+    }
+}
+h1 {
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.boxDiv {
+    width: 20%;
+    float: left;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-right: 4%;
+    align-content: center;
+}
+span {
+    display:block;
+    font-family: 'Dosis', sans-serif;
+}
+.timeBox {
+    font-size: 70px;
+    text-align: center;
+}
+.timeDiscription {
+    text-align: center;
+    font-size: 30px;
+}
+
+
