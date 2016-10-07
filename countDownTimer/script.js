@@ -1,5 +1,5 @@
 (function(){
-    var endTime = new Date('2016-10-07T23:31:00') / 1000;
+    var endTime = new Date('2017-01-01T00:00:00') / 1000;
     var nowTime = new Date().getTime()/1000;
     var time = (endTime - nowTime);
     var duration = Math.round(time);

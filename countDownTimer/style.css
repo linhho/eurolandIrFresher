@@ -3,11 +3,12 @@ body {
     no-repeat center center fixed;
     background-size: cover;
     color: grey;
+    font-family: 'Dosis', sans-serif;
 }
 
 .clockDiv {
     width: 50%;
-    height: 30vh;
+    height: 300px;
     max-width: 100%;
     background-color: black;
     border-radius: 10px;
@@ -27,9 +28,9 @@ body {
     }
 }
 h1 {
-    max-width: 300px;
-    margin: auto;
+    text-align: center;
     margin-bottom: 10px;
+    font-size: 40px;
 }
 
 .boxDiv {
@@ -42,7 +43,6 @@ h1 {
 }
 span {
     display:block;
-    font-family: 'Dosis', sans-serif;
 }
 .timeBox {
     font-size: 70px;
@@ -53,4 +53,7 @@ span {
     font-size: 26px;
 }
 
-
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
