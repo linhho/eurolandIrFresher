@@ -1,0 +1,19 @@
+table {
+    min-width: 300px;
+}
+.right-text {
+   text-align: right;
+}
+.left-text {
+    text-align: left;
+}
+.dimgray {
+    background-color: dimgray;
+    color: white;
+}
+.darkgrey {
+    background-color: darkgrey;
+}
+.lightgray {
+    background-color: lightgray;
+}
