@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .redBorder {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading1</h1>
+    <div>
+        <h1>Heading2</h1>
+        <h1>Heading3</h1>
+        <h1>Heading4</h1>
+    </div>
+    <h1>Heading5</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('div>h1').css('background-color', 'red');
+            //css
+            //$('div>h1').css('border', '1px solid red');
+            //atribute
+            //$('div>h1').attr('style', 'border: 1px solid red;');
+            //addClass
+            //$('div>h1').addClass('redBorder');
+        });
+    </script>
+</body>
+</html>
