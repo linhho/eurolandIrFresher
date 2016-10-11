@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mini 1605</title>
+</head>
+<body>
+    <a href="www.w3resource.com/sqlite" id="tut">SQLite Tutorial</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#tut").click(function(e){
+                //e.preventDefault();
+                $(this).attr("href", "http://vnexpress.net");
+                $(this).text("Xem tin lá cải");
+            });
+        });
+    </script>
+</body>
+</html>
