@@ -20,7 +20,13 @@ var lakshmana = $('#lakshmana');
 $('.character').hide();
 $('.right').prepend("<p>Roll over a character's name to learn more.</p>");
 
-
+$('.name').mouseenter(function() {
+    name = $(this).attr('data-person');
+    $(name+'.character').show();
+  });
+$('.name').mouseleave(function() {
+    $(name+'.character').hide();
+  });
 
 // ----------------------------------------------------------------------------
 }); // do not delete
