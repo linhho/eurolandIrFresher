@@ -25,7 +25,7 @@ $('.name').mouseenter(function() {
     $(name+'.character').show();
   });
 $('.name').mouseleave(function() {
-    $(name+'.character').hide();
+    $('.character').hide();
   });
 
 // ----------------------------------------------------------------------------
