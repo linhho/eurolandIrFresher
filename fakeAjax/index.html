@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading1</h1>
+    <div>
+        <a href="test1.html">Test1</a>
+        <a href="test2.html">Test2</a>
+    </div>
+    <div id="mainContent">Index</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('a').click(function(e){
+               e.preventDefault();
+                var urlCall = $(this).attr('herf');
+                $.ajax({
+                    url: urlCall,
+                    //async: false,
+                    success: function(resulf){//resulf is text
+                        var ajaxContent = $(resulf).filter('#content');
+                        $('#mainContent').html(ajaxContent);
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

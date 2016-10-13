@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lap 19</title>
+   <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!--slide-->
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/jquery.typeahead.css">
+</head>
+  <body>
+    <div>
+        <div class="twentytwenty-container">
+          <img src="img/one.jpg" />
+          <img src="img/two.jpeg" />
+        </div>
+        <div class="container row">
+            <div class="col s12 l4 offset-l8">
+                <form id="form-country_v1" name="form-country_v1">
+                    <div class="typeahead__container">
+                        <div class="typeahead__field">
+
+                            <span class="typeahead__query">
+                                <input class="js-typeahead-country_v1" name="country_v1[query]" type="search" placeholder="Search" autocomplete="off">
+                            </span>
+                            <span class="typeahead__button">
+                                <button type="submit">
+                                    <i class="typeahead__search-icon"></i>
+                                </button>
+                            </span>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col s12 hide-on-small-only">
+                <a id="viewList" href="#" class="left grey-text"><i class="Large material-icons">view_list</i></a>
+                <a id="viewCard" href="#" class="left black-text"><i class="Large material-icons">view_module</i></a>
+            </div>
+            <div class="row">
+                <div class="webContent col s12 m6 l4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/one.jpg">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information.
+                      I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="webContent col s12 m6 l4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/one.jpg">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information.
+                      I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="webContent col s12 m6 l4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/one.jpg">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information.
+                      I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="webContent col s12 m6 l4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/one.jpg">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information.
+                      I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="webContent col s12 m6 l4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/one.jpg">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information.
+                      I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="webContent col s12 m6 l4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/one.jpg">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information.
+                      I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+    <footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Copyright by Linh Hoo
+            <a class="grey-text text-lighten-4 right" href="http://linhho.net">Linh Hoo</a>
+            </div>
+          </div>
+        </footer>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+          
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="js/jquery.typeahead.js"></script>
+<!--    <script src="js/bloodhound.min.js"></script>-->
+    <script>
+    $(window).load(function(){
+      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+    });
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
