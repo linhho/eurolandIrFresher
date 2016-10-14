@@ -1,21 +1,21 @@
 $(document).ready(function(){
     $('#viewList').click(function(e){
         e.preventDefault();
-        $('.card').addClass('horizontal');
-        $('.webContent').removeClass('m6 l4');
-        $(this).addClass('black-text');
-        $(this).removeClass('grey-text');
-        $('#viewCard').addClass('grey-text');
-        $('#viewCard').removeClass('black-text');
+        $('.webContent').fadeOut("flow",function(){
+            $(this).removeClass('m6 l4');
+            $('.card').addClass('horizontal');
+        }).fadeIn("flow");
+        $(this).addClass('black-text').removeClass('grey-text');
+        $('#viewCard').addClass('grey-text').removeClass('black-text');
     });
     $('#viewCard').click(function(e){
         e.preventDefault();
-        $('.webContent').addClass('m6 l4');
-        $('.card').removeClass('horizontal');
-        $(this).addClass('black-text');
-        $(this).removeClass('grey-text');
-        $('#viewList').addClass('grey-text');
-        $('#viewList').removeClass('black-text');
+        $('.webContent').fadeOut("flow",function(){
+            $(this).addClass('m6 l4');
+            $('.card').removeClass('horizontal');
+        }).fadeIn("flow");
+        $(this).addClass('black-text').removeClass('grey-text');
+        $('#viewList').addClass('grey-text').removeClass('black-text');
     });
     
     //typeahead search
