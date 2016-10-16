@@ -1,0 +1,27 @@
+.parallax-container {
+      height: 400px;
+      margin-bottom: 40px;
+    }
+
+ul li {
+    background-color: white;
+    margin-top: 2px;
+    padding: 10px;
+}
+#addList {
+    background-color: transparent !important;
+    border: dashed 2px white;
+    text-align: center;
+}
+#addList a {
+    color: white;
+}
+#addList i {
+    vertical-align: middle;
+}
+
+#addListContent input {
+    height: 30px;
+    margin-bottom: 0px;
+    border: white;
+}
