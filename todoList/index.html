@@ -6,6 +6,7 @@
     <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="teal">
@@ -15,16 +16,19 @@
     <div class="container">
         <ul id="todolist">
 <!--            todo list-->
+
         </ul>
         <ul>
             <li id="addList"><a href="#"><i class="material-icons">add_circle_outline</i> ADD NEW TASK</a></li>
-            <li id="addListContent"> <input id="taskTextField" type="text" placeholder="Task content"></li>
+            <li id="addListContent" style="display: none;"> <input id="taskTextField" type="text" placeholder="Task content"></li>
         </ul>
     </div>
       
     <!-- Compiled and minified JavaScript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script src="js/init.js"></script>
     <script src="js/script.js"></script>
 </body>
