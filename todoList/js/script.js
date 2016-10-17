@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $('#addList').click(function(){
+    $('#addList').click(function(e){
+        e.preventDefault();
         $(this).hide('fast');
         $('#addListContent').show('fast');
     });
@@ -8,7 +9,7 @@ $(document).ready(function(){
         if(key == 13)  // the enter key code
         {
             taskName = $(this).val();
-            $('ul#todolist').append('<li class="task">'+taskName+'<a class="removeTask" href="#"><i class="material-icons right red-text">clear</i></a></li>').show('slow');
+            $('ul#todolist').append('<li class="task">'+taskName+'<a class="removeTask" href=""><i class="material-icons right red-text">clear</i></a></li>').show('slow');
             $('#addListContent').hide('fast');
             $(this).val('');
             $('#addList').show('fast');
@@ -17,6 +18,7 @@ $(document).ready(function(){
     });
 
     $('ul#todolist').on('click', 'li a.removeTask i', function(e) {
+        e.preventDefault();
         $(this).parent().parent().fadeOut("slow", function(){
             $(this).remove();
         });
@@ -24,5 +26,5 @@ $(document).ready(function(){
     $( function() {
         $( "#todolist" ).sortable();
         $( "#todolist" ).disableSelection();
-      } );
+    } );
 });
