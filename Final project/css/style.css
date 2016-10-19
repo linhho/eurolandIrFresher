@@ -1,0 +1,46 @@
+/* 
+*The animation code 
+*Author: Linh Hoo
+*/
+@keyframes leftToRight-opacity {
+    0%   {
+        left: -15%;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+/* 
+*Style 
+*Author: Linh Hoo
+*/
+body {
+    overflow:hidden;
+}
+
+#website-content {
+    overflow: auto;
+    height: 100vh;
+}
+/* 
+*Parallax header 
+*Author: Linh Hoo
+*/
+#header-parallax.parallax-container {
+    height: 100vh;
+}
+.character-luffy {
+    max-height: 100vh;
+    max-width: 100%;
+    position: relative;
+    top: 20vh;
+    bottom: 0;
+    -webkit-animation-name: leftToRight-opacity; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation-name: leftToRight-opacity;
+    animation-duration: 2s;
+}
+
