@@ -1,0 +1,10 @@
+h1 {
+    font-size: 30px;
+}
+.content-wrapper {
+    margin-top: 100px;
+}
+.q_content {
+    min-height: 120px;
+    padding: 10px
+}

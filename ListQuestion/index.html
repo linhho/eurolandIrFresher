@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content-wrapper container row">
+       <div class="col s12 l3">
+           <form class="col s12">
+              
+                <div class="row">
+                    <div class="input-field">
+                        <input id="question_title" type="tel" class="validate">
+                        <label for="question_title">Question title</label>
+                    </div>
+                    <div class="input-field">
+                        <select>
+                            <option value="question">Question</option>
+                            <option value="yes_no_question">Yes no question</option>
+                            <option value="poll">Poll</option>
+                        </select>
+                        <label>Question type</label>
+                    </div>
+                     <div id="question-content">
+                       <div class="input-field">
+                            <input id="question_content" type="tel" class="validate">
+                            <label for="question_content">Question content</label>
+                       </div>
+                    </div>
+                </div>
+            </form>
+       </div>
+        <ul id="Question_list" class="col s12 l9">
+            <li>
+                <div class="q_content blue darken-3 white-text">
+                    <h1>#1 Anh Cương Gay hay Les?</h1>
+                    <span>Tôi có 1 thắc mắc bấy lâu nay đó là: Cương Les hay Gay? Mong mọi người giải đáp giúp tôi!</span>
+                </div>
+                <table class="striped responsive-table">
+                    <thead class="blue white-text">
+                        <tr>
+                            <th data-field="id">Answer</th>
+                            <th data-field="name">User name</th>
+                        </tr>
+                    </thead>
+                    <tbody class="an_content">
+                        <tr>
+                            <td>Cương Gay.</td>
+                            <td>Hung_Gay</td>
+                        </tr>
+                        <tr>
+                            <td>Materialize comes in two different forms. You can select which version you want depending on your preference and expertise.</td>
+                            <td>Jellybean</td>
+                        </tr>
+                    </tbody>
+                    <tr>
+                            <td><input placeholder="Answer" id="question_title" type="tel" class="validate">
+                            </td>
+                            <td><a class="waves-effect waves-teal btn-flat blue-text">Submit</a></td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <div class="q_content blue darken-3 white-text">
+                    <h1>#2 Anh Cương Gay hay Les?</h1>
+                    <span>Tôi có 1 thắc mắc bấy lâu nay đó là: Cương Les hay Gay? Mong mọi người giải đáp giúp tôi!</span>
+                </div>
+                <table class="striped responsive-table">
+                    <thead class="blue white-text">
+                        <tr>
+                            <th data-field="id">Answer</th>
+                            <th data-field="name">User name</th>
+                        </tr>
+                    </thead>
+                    <tbody class="an_content">
+                        <tr>
+                            <td>Cương Gay.</td>
+                            <td>Hung_Gay</td>
+                        </tr>
+                        <tr>
+                            <td>Materialize comes in two different forms. You can select which version you want depending on your preference and expertise.</td>
+                            <td>Jellybean</td>
+                        </tr>
+                        <tr>
+                            <td>Materialize comes in two different forms. You can select which version you want depending on your preference and expertise.</td>
+                            <td>Lollipop</td>
+                        </tr>
+                    </tbody>
+                    <tr>
+                        <td><input placeholder="Answer" id="question_title" type="tel" class="validate">
+                            </td>
+                        <td><a class="waves-effect waves-teal btn-flat blue-text">Submit</a></td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </div>
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
