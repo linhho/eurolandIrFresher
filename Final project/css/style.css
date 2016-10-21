@@ -1,4 +1,9 @@
 /* 
+*Import font 
+*Author: Linh Hoo
+*/
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+/* 
 *The animation code 
 *Author: Linh Hoo
 */
@@ -6,9 +11,40 @@
     0%   {
         left: -15%;
         opacity: 0;
+    },
+    20%   {
+        left: 15%;
+        opacity: 0;
     }
     100% {
         left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes rightToLeft-opacity {
+    0%   {
+        left: 15%;
+        opacity: 0;
+    },
+    20%   {
+        left: 15%;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes opacity {
+    0%   {
+        opacity: 0;
+    },
+    20%   {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
     }
 }
@@ -24,6 +60,8 @@ body {
 #website-content {
     overflow: auto;
     height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 /* 
 *Parallax header 
@@ -32,15 +70,92 @@ body {
 #header-parallax.parallax-container {
     height: 100vh;
 }
+.brand-logo {
+    font-family: 'Archivo Black', sans-serif;
+}
+.brand-logo img {
+    height: 50px;
+    margin-top: 6px;
+    float: left;
+}
 .character-luffy {
     max-height: 100vh;
     max-width: 100%;
     position: relative;
-    top: 20vh;
-    bottom: 0;
     -webkit-animation-name: leftToRight-opacity; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
     animation-name: leftToRight-opacity;
     animation-duration: 2s;
+}
+
+#character-infor {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    height: 500px;
+    max-height: 70vh;
+    background-image: url("../img/character-infor-bg.png");
+    background-repeat:repeat;
+    color: white;
+    overflow: auto;
+    -webkit-animation-name: rightToLeft-opacity; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation-name: rightToLeft-opacity;
+    animation-duration: 2s;
+}
+.character-name {
+    text-align: center;
+    font-size: 40px;
+}
+.character i {
+    margin-top: 2px;
+}
+
+.character-list {
+    position: absolute;
+    z-index: 9080;
+    max-height: 90vh;
+    overflow-y: scroll;
+    top: 30px;
+    left: 10px;
+    opacity: 0.4;
+}
+.character-list li img {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+/*
+*/
+
+#downToUpScreen {
+    position: relative;
+    z-index: 9999;
+    top: 100vh;
+    left: 50vw;
+}
+#downToUpScreen div {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: -50px;
+    left: -60px;
+    /*transform 45*/
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg);
+    /*animate*/
+    -webkit-animation-name: opacity; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation-name: opacity;
+    animation-duration: 2s;
+}
+#downToUpScreen div a i {
+    position: relative;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Safari */
+    transform: rotate(-45deg);
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
