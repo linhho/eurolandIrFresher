@@ -2386,7 +2386,7 @@ $(document).ready(function(){
                 menu_id.velocity({'translateX': [0, options.menuWidth]}, {duration: 300, queue: false, easing: 'easeOutQuad'});
               }
 
-              var overlay = $('<div id="sidenav-overlay"></div>');
+              var overlay = $('<div id=""></div>');
               overlay.css('opacity', 0)
               .click(function(){
                 menuOut = false;
@@ -2399,7 +2399,7 @@ $(document).ready(function(){
 
               });
               $('body').append(overlay);
-              overlay.velocity({opacity: 1}, {duration: 300, queue: false, easing: 'easeOutQuad',
+              overlay.velocity({opacity: 0}, {duration: 300, queue: false, easing: 'easeOutQuad',
                 complete: function () {
                   menuOut = true;
                   panning = false;

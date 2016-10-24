@@ -78,7 +78,14 @@ body {
     margin-top: 6px;
     float: left;
 }
-.character-luffy {
+.ch_info {
+    display: none;
+}
+#character-luffy {
+    display: inline;
+}
+
+.ch_img {
     max-height: 100vh;
     max-width: 100%;
     position: relative;
@@ -111,19 +118,27 @@ body {
     margin-top: 2px;
 }
 
-.character-list {
+.character-avatar-list {
     position: absolute;
-    z-index: 9080;
+    z-index: 69;
     max-height: 90vh;
     overflow-y: scroll;
     top: 30px;
     left: 10px;
+}
+.character-avatar-list li {
     opacity: 0.4;
 }
-.character-list li img {
+.character-avatar-list li img {
     height: 40px;
     margin-right: 10px;
     border-radius: 20px;
+}
+/*
+*character avatar
+*/
+#luffy-avatar {
+    opacity: 1;
 }
 /*
 */
@@ -158,4 +173,41 @@ body {
     margin-top: 20px;
     margin-left: 20px;
 }
+
+/*
+* Card style
+*/
+.card-header {
+    width: 100%;
+    clear: both;
+}
+.author-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.card-header .card-title {
+    position:absolute;
+    margin-top: 2px;
+    font-size: 20px !important;
+    width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-time {
+    position:absolute;
+    margin-top: 30px;
+    font-size: 12px !important;
+    width: 80%;
+}
+/*
+*side-nav
+*/
+.side-nav {
+    z-index: 99969;
+}
+
 
